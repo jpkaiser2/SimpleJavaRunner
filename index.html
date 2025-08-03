@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Java Runner</title>
+    <script src="https://cjrtnc.leaningtech.com/3.0/cj3loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.0.1/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.0.1/theme/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Simple Java Runner - Based on Leaning Technologies' JavaFiddle</h1>
+            <button id="runBtn" class="run-button">Run Code</button>
+        </div>
+        
+        <div class="main-content">
+            <div class="editor-section">
+                <div class="editor-header">
+                    <span>Main.java</span>
+                </div>
+                <div id="editor"></div>
+            </div>
+            
+            <div class="output-section">
+                <div class="console-section">
+                    <div class="section-header">
+                        Console
+                        <button id="clearBtn" class="clear-button">Clear</button>
+                    </div>
+                    <pre id="console" class="console-output"></pre>
+                </div>
+                
+                <!-- Hidden output div for CheerpJ display -->
+                <div id="output" style="display: none;"></div>
+            </div>
+        </div>
+        
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <span>Running Java code...</span>
+        </div>
+    </div>
+
+    <!-- CodeMirror 6 modules -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
