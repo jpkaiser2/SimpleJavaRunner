@@ -8,7 +8,6 @@ A simplified version of JavaFiddle that allows you to write and run Java code in
 - **Code Editor**: Powered by CodeMirror 6 with Java syntax highlighting
 - **Instant Execution**: Run Java code directly in the browser
 - **Console Output**: View program output and compilation errors
-- **Visual Results**: See graphical output from Java Swing applications
 
 ## Getting Started
 
