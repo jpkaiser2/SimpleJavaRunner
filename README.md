@@ -55,29 +55,6 @@ This simplified version removes:
 - Complex routing
 - Local storage persistence
 
-## Integration with Next.js
-
-To integrate this into a Next.js application:
-
-1. Copy the core logic from `script.js`
-2. Convert to a React component
-3. Use dynamic imports for CodeMirror to avoid SSR issues
-4. Ensure CheerpJ loads on the client side only
-5. Handle the tools.jar file in your public directory
-
-Example React component structure:
-```jsx
-'use client';
-import { useEffect, useRef, useState } from 'react';
-import dynamic from 'next/dynamic';
-
-// Dynamically import CodeMirror to avoid SSR issues
-const CodeEditor = dynamic(() => import('./CodeEditor'), { ssr: false });
-
-export default function JavaRunner() {
-  // Component logic here
-}
-```
 
 ## License
 
