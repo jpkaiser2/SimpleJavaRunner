@@ -20,7 +20,7 @@ class SimpleJavaRunner {
         System.out.println("Hello, World!");
         
         // Try some basic Java features
-        int number = 42;
+        int number = 87;
         String message = "The answer is: " + number;
         System.out.println(message);
         
